@@ -9,6 +9,8 @@ const failedTab = document.querySelector('.failed-tab')
 const finishedTab = document.querySelector('.success-tab')
 
 
+
+
 //making restart button refrsh page
 for (let i = 0; i <= restartBtn.length - 1; i++) {
     restartBtn[i].addEventListener('click', () => {
@@ -51,11 +53,13 @@ optContainers.forEach(opt => {
 //making questions move when correct and show when wrong
 for (let i = 0; i <= submitBtns.length - 1; i++) {
     submitBtns[i].addEventListener('click', () => {
-        if (correct[i].checked == true && !submitBtns[i].classList.contains('finished')) {
+        //if answered correctly and not the last question
+        if (correct[i].checked == true && !submitBtns[0].classList.contains('finished')) {
             console.log('correct')
             score += 1
             correct[i].parentElement.parentElement.parentElement.classList.toggle('answered')
             submitBtns.shift(submitBtns[i])
+            console.log(submitBtns[i + 1])
 
 
 
@@ -71,10 +75,15 @@ for (let i = 0; i <= submitBtns.length - 1; i++) {
 
 
 
-        } else {
+        }  else if(correct[i].checked == true && submitBtns[0].classList.contains('finished')){
+        //if answered correctly and is the last question
+            finishedBtn.parentElement.classList.toggle('hidden')
+            finishedTab.classList.toggle('hidden')
+            finishedTab.classList.toggle('active')
+        }else {
             console.log('incorrect')
-
-            if (!submitBtns[i].classList.contains('finished')) {
+//if answered incorrectly
+            if (!submitBtns[0].classList.contains('finished')) {
                 checkedOpt.forEach((opt) => {
                     if (opt.checked) {
                         opt.parentElement.classList.toggle('wrong')
@@ -90,10 +99,6 @@ for (let i = 0; i <= submitBtns.length - 1; i++) {
                     document.querySelector('.failed-tab').classList.toggle('hidden')
                 }, 1000)
 
-            } else {
-                finishedBtn.parentElement.classList.toggle('hidden')
-                finishedTab.classList.toggle('hidden')
-                finishedTab.classList.toggle('active')
             }
 
 
