@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Normalize-reset/reset.css">
+    <link rel="stylesheet" href="Normalize-reset/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Countries Quiz</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+    </header>
+    <section class="quiz-wrap">
+
+        <section class="intro-tab hidden">
+            <h2>Welcome to the <span>Countries Quiz</span></h2>
+            <h3>Press the start button to test yourself!</h3>
+            <button class="btn start">Start</button>
+        </section>
+
+        <section class="question-tab smallest-country hidden">
+            <h2><span>Question 1/10</span></h2>
+            <h3>By size, what is the smallest country in the world?</h3>
+            <div class="options">
+                <div class="opt one"> <input type="radio" name="opt1"> <span> Monaco </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Israel </span> </div>
+                <div class="opt three answer-container"> <input class="answer" type="radio" name="opt1"> <span> The Vatican </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> Canada </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab unicorn-country hidden">
+            <h2><span>Question 2/10</span></h2>
+            <h3>Which country has a Unicorn as its national animal?</h3>
+            <div class="options">
+                <div class="opt one answer-container"> <input class="answer" type="radio" name="opt1"> <span> Scotland </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Austria </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Fiji </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> Columbia </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab Beirut-country hidden">
+            <h2><span>Question 3/10</span></h2>
+            <h3>Which country is Beirut the capital of?</h3>
+            <div class="options">
+                <div class="opt one "> <input type="radio" name="opt1"> <span> Croatia </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Syria </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Uganda </span> </div>
+                <div class="opt four answer-container"> <input class="answer" type="radio" name="opt1"> <span> Lebanon </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab coldest-country hidden">
+            <h2><span>Question 4/10</span></h2>
+            <h3>Officially, what is the coldest country in the world?</h3>
+            <div class="options">
+                <div class="opt one "> <input type="radio" name="opt1"> <span> Alaska </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Iceland </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Russia </span> </div>
+                <div class="opt four answer-container"> <input class="answer" type="radio" name="opt1"> <span> Antarctica </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab newest-country hidden">
+            <h2><span>Question 5/10</span></h2>
+            <h3>What country is the newest in the world?</h3>
+            <div class="options">
+                <div class="opt one answer-container"> <input class="answer" type="radio" name="opt1"> <span> South Sudan </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Kosovo </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Palau </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> Ingitabe </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab hottest-country hidden">
+            <h2><span>Question 6/10</span></h2>
+            <h3>Officially, what is the hottest country in the world?</h3>
+            <div class="options">
+                <div class="opt one"> <input type="radio" name="opt1"> <span> North Sudan </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Syberia </span> </div>
+                <div class="opt three answer-container"> <input class="answer" type="radio" name="opt1"> <span> Mali </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> Texas </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab mountain-country hidden">
+            <h2><span>Question 7/10</span></h2>
+            <h3>Which country is the highest mountain in the world found?</h3>
+            <div class="options">
+                <div class="opt one"> <input type="radio" name="opt1"> <span> Paris </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Ireland </span> </div>
+                <div class="opt three answer-container"> <input class="answer" type="radio" name="opt1"> <span> Nepal </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> New Zealand </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab dracula-country hidden">
+            <h2><span>Question 8/10</span></h2>
+            <h3>The fictional character Dracula originated from Transylvania in which European country?</h3>
+            <div class="options">
+                <div class="opt one"> <input type="radio" name="opt1"> <span> Hungary </span> </div>
+                <div class="opt two answer-container"> <input class="answer" type="radio" name="opt1"> <span> Romania </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Sweden </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> Austria </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab gin-country hidden">
+            <h2><span>Question 9/10</span></h2>
+            <h3>Which country invented gin?</h3>
+            <div class="options">
+                <div class="opt one"> <input type="radio" name="opt1"> <span> Poland </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Monaco </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Iraq </span> </div>
+                <div class="opt four answer-container"> <input class="answer" type="radio" name="opt1"> <span> Holland </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="question-tab coast-country active">
+            <h2><span>Question 10/10</span></h2>
+            <h3>What country has the longest coastline in the world?</h3>
+            <div class="options">
+                <div class="opt one answer-container"> <input class="answer" type="radio" name="opt1"> <span> Canada </span> </div>
+                <div class="opt two"> <input type="radio" name="opt1"> <span> Brazil </span> </div>
+                <div class="opt three"> <input type="radio" name="opt1"> <span> Argentina </span> </div>
+                <div class="opt four"> <input type="radio" name="opt1"> <span> Bonaire </span> </div>
+            </div>
+            <button class="btn submit">Test</button>
+        </section>
+
+        <section class="failed-tab hidden">
+            <h2><span>Better luck next time!</span></h2>
+            <h3>your final score is: <span class="score">4</span></h3>
+            <button class="btn restart">Try Again</button>
+        </section>
+
+        <section class="success-tab hidden">
+            <h2><span>Congrats, you're a true Geographer! </span></h2>
+            <h3>your final score is a perfect: <span>10/10</span></h3>
+            <button class="btn restart">Try Again</button>
+        </section>
+
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
